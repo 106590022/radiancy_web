@@ -16,7 +16,7 @@
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
-  <router-view style="margin: 20vh 14.8vw 18vh 14.8vw"></router-view>
+  <router-view style="margin: 20vh 15.5vw 18vh 15.5vw"></router-view>
 </div>
 </template>
 

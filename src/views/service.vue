@@ -1,8 +1,10 @@
 <template>
+<div>
   <b-row>
     <p class="title">SERVICE</p>
     <p class="line"></p>
   </b-row>
+</div>
 </template>
 
 <script>
