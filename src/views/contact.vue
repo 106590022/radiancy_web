@@ -8,19 +8,19 @@
     <b-col cols="7" style="padding: 0px;">
       <p class="q_name">Quantum Radition Technology</p>
       <b-row class="info_row">
-        <b-col cols="2"><b-img class="info_icon" :src="require('../assets/contact/ic_call_24px.png')"></b-img></b-col>
+        <b-col cols="2"><b-img class="con_info_icon" :src="require('../assets/contact/ic_call_24px.png')"></b-img></b-col>
         <b-col cols="10" class="info_text">02 2911 2196</b-col>
       </b-row>
       <b-row class="info_row">
-        <b-col cols="2"><b-img class="info_icon" :src="require('../assets/contact/ic_access_time_24px.png')"></b-img></b-col>
+        <b-col cols="2"><b-img class="con_info_icon" :src="require('../assets/contact/ic_access_time_24px.png')"></b-img></b-col>
         <b-col cols="10" class="info_text">Weekdays 9:00AM - 6:00PM</b-col>
       </b-row>
       <b-row class="info_row">
-        <b-col cols="2"><b-img class="info_icon" :src="require('../assets/contact/ic_markunread_24px.png')"></b-img></b-col>
+        <b-col cols="2"><b-img class="con_info_icon" :src="require('../assets/contact/ic_markunread_24px.png')"></b-img></b-col>
         <b-col cols="10" class="info_text">alvin.chen@radition.com.tw</b-col>
       </b-row>
       <b-row class="info_row">
-        <b-col cols="2"><b-img class="info_icon" style="margin-top:1vh;" :src="require('../assets/contact/ic_location_on_24px.png')"></b-img></b-col>
+        <b-col cols="2"><b-img class="con_info_icon" style="margin-top:1vh;" :src="require('../assets/contact/ic_location_on_24px.png')"></b-img></b-col>
         <b-col cols="10" class="info_text">No. 2, Aly. 34, Ln. 65, Sec. 3, Beixin Rd.,<br>Xindian Dist., New Taipei City 231</b-col>
       </b-row>
     </b-col>
@@ -85,8 +85,8 @@ export default{
   margin-top: 6vh;
 }
 
-.info_icon{
-  width: 1.6vw;
+.con_info_icon{
+  width: 1.7vw;
   margin-left: 1vw;
 }
 
