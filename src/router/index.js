@@ -59,5 +59,6 @@ export default new Router({
       name : 'recruitment_medical',
       component : recruitment_medical
     }
+
   ]
 })
