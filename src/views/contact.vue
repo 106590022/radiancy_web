@@ -4,8 +4,8 @@
     <p class="title">CONTACT</p>
     <p class="line"></p>
   </b-row>
-  <b-row style="margin-top: 5vh;">
-    <b-col cols="7" style="padding: 0px;">
+  <b-row style="margin-top: 5vmin;">
+    <b-col cols="col-12 col-md-7" style="padding: 0px;">
       <p class="q_name">Quantum Radition Technology</p>
       <b-row class="info_row">
         <b-col cols="2"><b-img class="con_info_icon" :src="require('../assets/contact/ic_call_24px.png')"></b-img></b-col>
@@ -24,7 +24,7 @@
         <b-col cols="10" class="info_text">No. 2, Aly. 34, Ln. 65, Sec. 3, Beixin Rd.,<br>Xindian Dist., New Taipei City 231</b-col>
       </b-row>
     </b-col>
-    <b-col cols="5" style="padding: 0px;">
+    <b-col cols="col-12 col-md-5" style="padding: 0px;" class="contact_col">
       <b-row class="contact" style="margin-top:0px;">
         <b-col cols="3" class="contact_text">Name</b-col>
         <b-col cols="9" class="info_text"><input type="text" class="form-control input"></b-col>
@@ -43,7 +43,7 @@
       </b-row>
       <b-row class="contact">
         <b-col cols="8"></b-col>
-        <b-col cols="4"><button type="button" class="btn btn-outline-success" style="width: 100%; font-size:1.2vw; text-align: center;">Submit</button></b-col>
+        <b-col cols="4"><button type="button" class="btn btn-outline-success" style="width: 100%; font-size:1.2vmax; text-align: center;" @click="reload">Submit</button></b-col>
       </b-row>
     </b-col>
   </b-row>
@@ -52,14 +52,20 @@
 
 <script>
 export default{
-  name:'about'
+  name:'contact',
+  methods:{
+    reload(){
+      alert("Thanks for you contact");
+      location.reload();
+    }
+  }
 }
 </script>     
 
 <style>
 .title{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.7vw;
+  font-size: 1.7vmax;
   font-weight: 500;
   color: #07833B;
   text-align: left;
@@ -74,7 +80,7 @@ export default{
 
 .q_name{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.5vmax;
   /* font-weight: 400; */
   color: #07833B;
   text-align: left;
@@ -86,21 +92,21 @@ export default{
 }
 
 .con_info_icon{
-  width: 1.7vw;
-  margin-left: 1vw;
+  width: 1.7vmax;
+  margin-left: 1vmax;
 }
 
 .info_text{
   color: #707070;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.2vmax;
 }
 
 .contact{
   color: #707070;
   margin-top: 5vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.2vmax;
   text-align: left;
 }
 
@@ -111,7 +117,13 @@ export default{
 
 .input{
   width: 100%;
-  height: 2vw;
+  height: 2vmax;
 }
+@media screen and (max-width: 678px){
+  .contact_col{
+    margin-top: 5vh;
+  }
+}
+
 </style>
 
