@@ -12,7 +12,7 @@
         <b-nav-item href="#" class="nav_item option_word" text="Service"><router-link to="service"  class="link">SERVICE</router-link></b-nav-item>
         <b-nav-item href="#" class="nav_item option_word" text="Contact"><router-link to="contact"  class="link">CONTACT</router-link></b-nav-item>
         <b-nav-item href="#" class="nav_item option_word" text="History">HISTORY</b-nav-item>
-        <b-nav-item href="#" class="nav_item option_word" text="Recruitment">RECRUITMENT</b-nav-item>
+        <b-nav-item href="#" class="nav_item option_word" text="Recruitment"><router-link to="recruitment"  class="link">RECRUITMENT</router-link></b-nav-item>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
